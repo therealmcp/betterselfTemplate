@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/RecentPosts.css';
 import Card from '../components/Card.js';
-// import blogPost from '../data/blog.json';
+import blogPost from '../data/blog.json';
 
 /**
 * @author
@@ -9,15 +9,15 @@ import Card from '../components/Card.js';
 **/
 
 const RecentPosts = (props) => {
-  // const [posts, setPosts] = useState([]);
+  const [posts, setPosts] = useState([]);
 
-  // useEffect(() => {
-  //   const posts = blogPost.data;
-  //   setPosts(posts);
-  // },[posts]);
+  useEffect(() => {
+    const posts = blogPost.data;
+    setPosts(posts);
+  },[posts]);
 
   return(
-    <div style={props.style}>
+    <div style={props.style} {...props}>
       <Card style={{marginBottom:'20px'}}>
         <div className="postImageWrapper">
           <img src={"https://dummyimage.com/300x200/000/fff"} alt=""></img>

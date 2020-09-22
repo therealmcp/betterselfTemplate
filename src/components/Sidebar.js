@@ -32,10 +32,10 @@ const Sidebar = (props) => {
               <span>About</span>
             </div>
             <div className="profileImageContainer">
-              <img src='https://pbs.twimg.com/profile_images/610556528337141760/hXFpyFbE.jpg' alt="Bio pic" />
+              <img src='https://blog-assets.hootsuite.com/wp-content/uploads/2022/03/free-stock-photos-6-620x412.jpg' alt="Bio pic" />
             </div>
             <div className="cardBody">
-              <p className="personalBio">My name is McP and I keep it real</p>
+              <p className="personalBio">This is the personal bio</p>
             </div>
           </NavLink>
         </Card>
